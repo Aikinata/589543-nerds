@@ -14,11 +14,11 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
       </a>
       <ul class="main-navigation-menu">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="main-navigation-menu-current"><a href="index.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="cart.html">Корзина</a></li>
       </ul>
 
     </nav>
@@ -118,17 +118,40 @@
       <a class="button" href="#">Напишите нам</a>
     </div>
   </section>
-  <footer class="main-footer"></footer>
-  <ul class="footer-social">
-    <li> <a class="social-button" href="#">ВКонтакте</a> </li>
-    <li> <a class="social-button" href="#">Фейсбук</a> </li>
-    <li> <a class="social-button" href="#">Инстаграм</a> </li>
-  </ul>
-  <section class="footer-promo">
-    <b>Давайте дружить, это выгодно!</b>
-    <span>Скидка 10% для друзей из социальных сетей.</span>
-  </section>
+  <footer class="main-footer">
+    <ul class="footer-social">
+      <li> <a class="social-button" href="#">ВКонтакте</a> </li>
+      <li> <a class="social-button" href="#">Фейсбук</a> </li>
+      <li> <a class="social-button" href="#">Инстаграм</a> </li>
+    </ul>
+    <section class="footer-promo">
+      <b>Давайте дружить, это выгодно!</b>
+      <span>Скидка 10% для друзей из социальных сетей.</span>
+    </section>
   </footer>
+
+  <section class="modal">
+    <h1>Напишите нам</h1>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="form-name">Ваше имя:</label>
+        <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="form-email">Ваш e-mail:</label>
+        <input id="form-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="form-message">Текст письма:</label>
+        <textarea id="form-message" name="message">
+          В свободной форме
+        </textarea>
+      </p>
+      <button class="button" type="submit">ОТПРАВИТЬ</button>
+    </form>
+    <button class="button modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+  </section>
+
 </body>
 
 </html>
