@@ -1,0 +1,132 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+    background-color: #ffffff;
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+  }
+  .main-nav {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .main-nav a {
+    color: #000000;
+  }
+  .main-nav-menu,
+  .slider-switches,
+  .descripion-services,
+  .percent-ratio,
+  .links-list,
+  .footer-social {
+    list-style: none;
+  }
+  .main-nav-menu a:hover {
+    color: rgb(251, 86, 90);
+  }
+  .main-nav-menu a:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .main-header {
+    background-color: #eeeeee;
+  }
+  .button {
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: #fb565a;
+  }
+  a.red {
+    background-color: #fb565a;
+  }
+  a.red:hover {
+    background-color: #e74246;
+  }
+  a.red:active {
+    background-color: #d7373b;
+    box-shadow: inset 0px 3px 0px 0px #000101;
+  }
+  a.green {
+    background-color: #00ca74;
+  }
+  a.green:hover {
+    background-color: #00bc6c;
+  }
+  a.yellow {
+    background-color: #efc84a;
+  }
+  a.yellow:hover {
+    background-color: #eab534;
+  }
+  .services-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .percent-ratio b,
+  .percent-ratio sup {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #000000;
+  }
+  .map {
+    background-image: url("/img/map-group.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .main-footer b {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #000000;
+  }
+  .main-header h1 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    color: #000000;
+  }
+  b.filter-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .filter fieldset {
+    border: none;
+  }
+  b.catalog-filter {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  .filter ul,
+  .catalog-filter-menu,
+  .triangles {
+    list-style: none;
+  }
+  .filter ul {
+    line-height: 20px;
+  }
+.main-catalog a {
+  color: #000000;
+}
