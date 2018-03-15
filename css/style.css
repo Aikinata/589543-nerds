@@ -80,11 +80,17 @@
     font-weight: 700;
     line-height: 30px;
   }
-  .percent-ratio b,
-  .percent-ratio sup {
+  .percent-ratio b {
     font-size: 45px;
     font-weight: 700;
-    line-height: 10px;
+    line-height: 10.06px;
+    color: #000000;
+  }
+  .percent-ratio sup {
+    vertical-align: top;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 700;
     color: #000000;
   }
   .map {
@@ -127,6 +133,6 @@
   .filter ul {
     line-height: 20px;
   }
-.main-catalog a {
-  color: #000000;
-}
+  .main-catalog a {
+    color: #000000;
+  }
