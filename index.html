@@ -14,15 +14,15 @@
     <div class="wrapper">
       <nav class="main-nav">
 
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+        <a class="main-header-logo" href="#">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс">
         </a>
         <ul class="main-nav-menu">
-          <li><a class="link link-active" href="index.html">Студия</a></li>
-          <li><a class="link link-active" href="clients.html">Клиенты</a></li>
-          <li><a class="link link-active" href="catalog.html">Магазин</a></li>
-          <li><a class="link link-active" href="contacts.html">Контакты</a></li>
-          <li><a class="link link-active" href="cart.html">Корзина</a></li>
+          <li class="menu-item"><a href="index.html">Студия</a></li>
+          <li class="menu-item"><a href="clients.html">Клиенты</a></li>
+          <li class="menu-item"><a href="catalog.html">Магазин</a></li>
+          <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+          <li class="menu-item menu-item-cart"><a href="cart.html">Корзина</a></li>
         </ul>
 
       </nav>
@@ -67,7 +67,7 @@
         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
         <a class="button green" href="#">ЗАКАЗАТЬ</a>
       </div>
-      <div class="services-item">
+      <div class="services-item sevices-item-present">
         <img src="img/illustration-3.png" width="300" height="146" alt="Картинка презентации">
         <h3>Презентации</h3>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -126,12 +126,12 @@
         </li>
         <li>
           <a href="#">
-            <img src="img/logo-3.png" width="260" height="180" alt="Картинка логотипа Pink">
+            <img src="img/logo-3.png" width="260" height="180" alt="Картинка логотипа Пинк">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/logo-4.png" width="260" height="180" alt="Картинка логотипа Mishka">
+            <img src="img/logo-4.png" width="260" height="180" alt="Картинка логотипа Мишка">
           </a>
         </li>
       </ul>
@@ -153,20 +153,20 @@
   <footer class="main-footer">
     <div class="wrapper">
       <ul class="footer-social">
-        <li> <a class="social-button" href="#">ВКонтакте</a> </li>
-        <li> <a class="social-button" href="#">Фейсбук</a> </li>
-        <li> <a class="social-button" href="#">Инстаграм</a> </li>
+        <li> <a class="social-icon vk-icon" href="#">ВКонтакте</a> </li>
+        <li> <a class="social-icon fb-icon" href="#">Фейсбук</a> </li>
+        <li> <a class="social-icon insta-icon" href="#">Инстаграм</a> </li>
       </ul>
-      <div class="footer-promo">
+      <p class="footer-promo">
         <b>Давайте дружить, это выгодно!</b>
         <span>Скидка 10% для друзей из социальных сетей.</span>
-      </div>
+      </p>
     </div>
   </footer>
 
   <section class="modal">
     <div class="wrapper">
-      <h1>Напишите нам</h1>
+      <h2>Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="form-name">Ваше имя:</label>
@@ -184,7 +184,7 @@
         </p>
         <button class="button" type="submit">ОТПРАВИТЬ</button>
       </form>
-      <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      <span class="modal-close">x</span>
     </div>
   </section>
 

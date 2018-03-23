@@ -14,15 +14,15 @@
     <div class="wrapper">
       <nav class="main-nav">
 
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
         </a>
         <ul class="main-nav-menu">
-          <li><a class="link link-active" href="index.html">Студия</a></li>
-          <li><a class="link link-active" href="clients.html">Клиенты</a></li>
-          <li><a link link-active href="catalog.html">Магазин</a></li>
-          <li><a class="link link-active" href="contacts.html">Контакты</a></li>
-          <li><a class="link link-active" href="cart.html">Корзина</a></li>
+          <li class="menu-item"><a href="index.html">Студия</a></li>
+          <li class="menu-item"><a href="clients.html">Клиенты</a></li>
+          <li class="menu-item menu-item-active"><a href="catalog.html">Магазин</a></li>
+          <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+          <li class="menu-item menu-item-cart"><a href="cart.html">Корзина</a></li>
         </ul>
 
       </nav>
@@ -37,7 +37,7 @@
 
         <form class="filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <legend><b class="filter-title">Стоимость:</b></legend>
+            <legend><b>Стоимость:</b></legend>
             <div class="range-filter">
               <span class="toggle"></span>
               <span class="toggle"></span>
@@ -50,7 +50,7 @@
             </label>
           </fieldset>
           <fieldset>
-            <legend><b class="filter-title">Сетка:</b></legend>
+            <legend><b>Сетка:</b></legend>
             <ul>
               <li class="filter-option">
                 <label>
@@ -71,7 +71,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend><b class="filter-title">Особенности:</b></legend>
+            <legend><b>Особенности:</b></legend>
             <ul>
               <li class="filter-option">
                 <label>
@@ -114,17 +114,13 @@
         <div class="catalog-filter">
           <b>Сортировать:</b>
           <ul class="catalog-filter-menu">
-            <li class="price"><a class="active">По цене</a></li>
-            <li class="type"><a href="#">По типу</a></li>
-            <li class="title"><a href="#">По названию</a></li>
+            <li class="filter-menu-item filter-menu-active">По цене</li>
+            <li class="filter-menu"><a href="#">По типу</a></li>
+            <li class="filter-menu"><a href="#">По названию</a></li>
           </ul>
-          <ul class="triangles">
-            <li class="triangle-left">
-              <a href="#"></a>
-            </li>
-            <li class="triangle-right">
-              <a href="#"></a>
-            </li>
+          <ul class="filter-triangles">
+            <li class="filter-triangle filter-triangle-down"><a href="#"><span class="visually-hidden">по убыванию</span></a></li>
+            <li class="filter-triangle filter-triangle-up"><a href="#"><span class="visually-hidden">по возрастанию</span></a></li>
           </ul>
         </div>
         <div class="catalog-product">
@@ -137,10 +133,9 @@
             </div>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Седона">
             <div class="product-description">
-              <h3>Sedona</h3>
-              <p>Информационный сайт
-                <br> для туристов</p>
-              <a class="button">9 900 руб.</a>
+              <a><h3>Sedona</h3></a>
+              <p>Информационный сайт<br> для туристов</p>
+              <a class="button" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -152,11 +147,10 @@
             </div>
             <img src="img/img-pink.jpg" width="360" height="576" alt="Макет приложения Пинк">
             <div class="product-description">
-              <h3>Pink App</h3>
-              <p>Продуктовый лендинг
-                <br> приложения для iOS и Android
+              <a><h3>Pink App</h3></a>
+              <p>Продуктовый лендинг<br> приложения для iOS и Android
               </p>
-              <a class="button">9 900 руб.</a>
+              <a class="button" href="#">9 900 руб.</a>
             </div>
           </article>
           <h1 class="visually-hidden">Макет сайта Барбершоп</h1>
@@ -168,10 +162,9 @@
             </div>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Барбершоп">
             <div class="product-description">
-              <h3>Barbershop</h3>
-              <p>Сайт салоны красоты.
-                <br>Для мужчин, да.</p>
-              <a class="button">9 900 руб.</a>
+              <a><h3>Barbershop</h3></a>
+              <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+              <a class="button" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -183,10 +176,9 @@
             </div>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет интернет-магазина Мишка">
             <div class="product-description">
-              <h3>MISHKA</h3>
-              <p>Интернет-магазин
-                <br> вязаных игрушек</p>
-              <a class="button">9 900 руб.</a>
+              <a><h3>MISHKA</h3></a>
+              <p>Интернет-магазин<br> вязаных игрушек</p>
+              <a class="button" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -197,10 +189,9 @@
             </div>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет А Плюс">
             <div class="product-description">
-              <h3>A Plus</h3>
-              <p>Лендинг курсов повышения
-                <br> квалификации</p>
-              <a class="button">9 900 руб.</a>
+              <a href="#"><h3>A Plus</h3></a>
+              <p>Лендинг курсов повышения<br> квалификации</p>
+              <a class="button" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -212,19 +203,18 @@
             </div>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
             <div class="product-description">
-              <h3>КВАСТ</h3>
-              <p>Промо-сайт производителя
-                <br> крафтового кваса</p>
-              <a class="button">9 900 руб.</a>
+              <a href="#"><h3>КВАСТ</h3></a>
+              <p>Промо-сайт производителя<br> крафтового кваса</p>
+              <a class="button" href="#">9 900 руб.</a>
             </div>
           </article>
         </div>
-        <div class="catalog-page-select">
-          <a class="page active" href="#">1</a>
-          <a class="page" href="#">2</a>
-          <a class="page" href="#">3</a>
-          <a class="next" href="#">следующая</a>
-        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-list"><a href="#">3</a></li>
+          <li class="button pagination-button"><a href="#">следующая</a></li>
+        </ul>
       </section>
     </div>
 
@@ -245,20 +235,20 @@
   <footer class="main-footer">
     <div class="wrapper">
       <ul class="footer-social">
-        <li> <a class="social-button" href="#">ВКонтакте</a> </li>
-        <li> <a class="social-button" href="#">Фейсбук</a> </li>
-        <li> <a class="social-button" href="#">Инстаграм</a> </li>
+        <li> <a class="social-icon vk-icon" href="#">ВКонтакте</a> </li>
+        <li> <a class="social-icon fb-icon" href="#">Фейсбук</a> </li>
+        <li> <a class="social-icon insta-icon" href="#">Инстаграм</a> </li>
       </ul>
-      <div class="footer-promo">
+      <p class="footer-promo">
         <b>Давайте дружить, это выгодно!</b>
         <span>Скидка 10% для друзей из социальных сетей.</span>
-      </div>
+      </p>
     </div>
   </footer>
 
   <section class="modal">
     <div class="wrapper">
-      <h1>Напишите нам</h1>
+      <h2>Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="form-name">Ваше имя:</label>
@@ -274,9 +264,9 @@
             В свободной форме
           </textarea>
         </p>
-        <button class="button form-button" type="submit">ОТПРАВИТЬ</button>
+        <button class="button" type="submit">ОТПРАВИТЬ</button>
       </form>
-      <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      <span class="modal-close">x</span>
     </div>
   </section>
 
