@@ -15,17 +15,6 @@ a {
   text-decoration: none;
 }
 
-.button {
-  font: inherit;
-
-  font-weight: 500;
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  border: none;
-}
 
 html {
   box-sizing: border-box;
@@ -37,13 +26,34 @@ html {
   box-sizing: inherit;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font: inherit;
+
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
 }
 
 .main-nav-menu,
@@ -57,11 +67,11 @@ html {
   list-style: none;
 }
 
-.main-header-logo img:hover {
+.main-header-logo:hover {
   opacity: 0.8;
 }
 
-.main-header-logo img:focus {
+.main-header-logo:focus {
   opacity: 0.3;
 }
 
@@ -88,17 +98,20 @@ html {
   align-items: center;
   padding-top: 50px;
 }
+
 .main-header-logo {
   margin-right: 202px;
 }
 
 .main-nav-menu {
   display: flex;
-  width: 798px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 800px;
 }
 
 .main-nav-menu li {
-  margin-right: 47px;
+  margin-right: 42px;
 }
 
 .main-nav-menu .menu-item-cart {
@@ -107,25 +120,54 @@ html {
 }
 
 .menu-item a {
-  color: #000000;
   font-weight: 500;
   line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
+  vertical-align: bottom;
   text-align: center;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   border: 2px solid transparent;
+  color: #000000;
 }
 
 .menu-item-active a {
   border-bottom-color: #fb565a;
 }
+
 .main-header b {
-  color: #000000;
+  display: block;
+  margin-bottom: 23px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+  color: #000000;
 }
+
+.header-slider-1 {
+  background-image: url(/img/slide1.png);
+  background-repeat: no-repeat;
+  background-position: 430px 10px;
+}
+
+.header-slider-2 {
+  background-image: url(/img/slide2.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+
+.header-slider-3 {
+  background-image: url(/img/slide3.png);
+  background-repeat: no-repeat;
+  background-position: right 10px;
+}
+
+.header-slider-1 .slider-info,
+.header-slider-2 .slider-info,
+.header-slider-3 .slider-info {
+  padding-top: 70px;
+}
+
 .services .wrapper {
   width: 1160px;
   margin: 0 auto;
@@ -133,10 +175,12 @@ html {
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
+
 .services-item {
   width: 300px;
   margin-right: 100px;
 }
+
 .services-item-present {
   margin-right: 60px;
 }
@@ -189,12 +233,15 @@ a .yellow:focus {
 
 .description .wrapper {
   width: 1160px;
-  padding-top: 40px;
   padding-bottom: 47px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
+}
+
+.description-block-left {
+  width: 700px;
 }
 
 .description-block-left b {
@@ -203,6 +250,9 @@ a .yellow:focus {
   line-height: 45px;
 }
 
+.description-block-right {
+  width: 360px;
+}
 .description-block-right strong {
   display: block;
   font-size: 16px;
@@ -259,19 +309,23 @@ a .yellow:focus {
 }
 
 .map-contacts {
+  width: 320px;
+  margin-top: 54px;
+  margin-bottom: 54px;
+  padding-left: 50px;
+  padding-top: 54px;
+  padding-bottom: 47px;
   background-color: #ffffff;
-  width: 319px;
-  padding: 54px 50px 47px;
-  margin: 53px 0;
 }
 
 .map-contacts h3 {
   margin: 0;
   padding: 0;
-  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  color: #000000;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -306,6 +360,10 @@ footer-promo span {
   display: block;
 }
 
+.catalog-page .main-header {
+  margin-bottom: 60px;
+}
+
 .main-header h1 {
   margin: 0;
   padding: 0;
@@ -314,8 +372,8 @@ footer-promo span {
   line-height: 55px;
   color: #000000;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 115px;
+  padding-top: 73px;
+  padding-bottom: 111px;
 }
 
 .main-catalog .wrapper {
@@ -417,6 +475,7 @@ footer-promo span {
   width: 360px;
   margin-right: 40px;
 }
+
 .catalog-product article:nth-child(2n) {
   margin-right: 0;
 }
