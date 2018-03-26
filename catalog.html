@@ -35,7 +35,7 @@
       <h2 class="visually-hidden">Каталог шаблонов</h2>
       <section class="filter-form">
 
-        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend><b>Стоимость:</b></legend>
             <div class="range-filter">
@@ -81,7 +81,7 @@
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="features-block" class="visually-hidden">
+                  <input type="checkbox" name="features-block" class="visually-hidden" disabled>
                   <span class="checkbox-indicator"></span> Блок преимуществ
                 </label>
               </li>
@@ -135,7 +135,7 @@
             <div class="product-description">
               <a><h3>Sedona</h3></a>
               <p>Информационный сайт<br> для туристов</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -150,11 +150,11 @@
               <a><h3>Pink App</h3></a>
               <p>Продуктовый лендинг<br> приложения для iOS и Android
               </p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
-          <h1 class="visually-hidden">Макет сайта Барбершоп</h1>
           <article class="product-item">
+          <h1 class="visually-hidden">Макет сайта Барбершоп</h1>
             <div class="top">
               <span class="circle"></span>
               <span class="circle"></span>
@@ -164,7 +164,7 @@
             <div class="product-description">
               <a><h3>Barbershop</h3></a>
               <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -178,7 +178,7 @@
             <div class="product-description">
               <a><h3>MISHKA</h3></a>
               <p>Интернет-магазин<br> вязаных игрушек</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -191,7 +191,7 @@
             <div class="product-description">
               <a href="#"><h3>A Plus</h3></a>
               <p>Лендинг курсов повышения<br> квалификации</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item">
@@ -205,15 +205,15 @@
             <div class="product-description">
               <a href="#"><h3>КВАСТ</h3></a>
               <p>Промо-сайт производителя<br> крафтового кваса</p>
-              <a class="button" href="#">9 900 руб.</a>
+              <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
         </div>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-list"><a href="#">3</a></li>
-          <li class="button pagination-button"><a href="#">следующая</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-button"><a href="#">следующая</a></li>
         </ul>
       </section>
     </div>
@@ -225,7 +225,7 @@
       <h2 class="visually-hidden">Наши контакты и адрес на карте</h2>
       <div class="map-contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <a class="button" href="#">Напишите нам</a>
       </div>
@@ -264,7 +264,7 @@
             В свободной форме
           </textarea>
         </p>
-        <button class="button" type="submit">ОТПРАВИТЬ</button>
+        <button class="button modal-btn" type="submit">ОТПРАВИТЬ</button>
       </form>
       <span class="modal-close">x</span>
     </div>
