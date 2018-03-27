@@ -157,21 +157,21 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-1 {
-  background-image: url(/img/slide1.png);
+  background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   background-position: 430px 10px;
   padding-bottom: 80px;
 }
 
 .slide-2 {
-  background-image: url(/img/slide2.png);
+  background-image: url(../img/slide2.png);
   background-repeat: no-repeat;
   background-position: right 0;
   padding-bottom: 80px;
 }
 
 .slide-3 {
-  background-image: url(/img/slide3.png);
+  background-image: url(../img/slide3.png);
   background-repeat: no-repeat;
   background-position: right 10px;
   padding-bottom: 80px;
@@ -373,7 +373,7 @@ a .yellow:focus {
 }
 
 .map {
-  background-image: url("/img/map-group.jpg");
+  background-image: url("../img/map-group.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -453,7 +453,7 @@ footer-promo span {
   padding-bottom: 111px;
 }
 .catalog-page .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .main-catalog .wrapper {
@@ -468,6 +468,27 @@ footer-promo span {
   width: 261px;
   margin-left: 0;
   margin-right: auto;
+}
+
+.flex-label {
+  display: flex;
+  align-items: center;
+}
+
+.flex-label input[type="text"] {
+  font: inherit;
+
+  width: 80px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #283136;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #eeeeee;
 }
 
 .filter-form ul {
@@ -495,19 +516,8 @@ filter-option input {
   opacity: 0.4;
 }
 
-.filter-option label:hover {
-  color: #000000;
-}
-.filter-option input:hover {
-  background-color: #4d4d4d;
-}
-
 .filter-option label:disabled {
   opacity: 0.3;
-}
-.filter-option input:disabled {
-  background-color: #4d4d4d;
-  opacity: 0.1;
 }
 
 .catalog {
@@ -525,16 +535,13 @@ filter-option input {
 .catalog-filter-menu {
   list-style: none;
   display: flex;
-  width: 280px;
-}
-.catalog-filter-menu li {
-  margin-right: 23px;
-}
-.catalog-filter-menu:last-child {
-  margin-right: 0;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 275px;
 }
 
 .catalog-filter b {
+  margin-right: 265px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -550,7 +557,7 @@ filter-option input {
 }
 
 .catalog-filter .filter-menu a {
-  display: inline-block;
+  display: block;
   opacity: 0.3;
   color: #000000;
   font-size: 14px;
@@ -585,14 +592,25 @@ filter-option input {
   margin-right: 0;
 }
 
+.product-item .top {
+  opacity: 0.12;
+  margin-bottom: -10px;
+}
+
 .product-description {
-  text-align: center;
   width: 360px;
+  text-align: center;
+
   background-color: #eeeeee;
+  border: 1px solid transparent;
 }
 
 .product-description h3 {
-  padding-top: 35px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  padding: 0;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -601,19 +619,41 @@ filter-option input {
 }
 
 .product-description p {
-  padding: 0;
   margin: 0;
-  padding-bottom: 25px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
+  padding: 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+
   color: #666666;
 }
 
-.product-description-btn {
+.product-description .product-description-btn {
+  margin-bottom: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.item-barbershop {
+  position: relative;
+}
+
+.description-barbershop {
+  position: absolute;
+  z-index: 1;
+  top: 378px;
+
+  display: none;
+}
+
+.item-barbershop:hover .description-barbershop {
+  display: block;
+}
+
+.item-barbershop:hover .top {
+  opacity: 1;
 }
 
 .pagination-list {
