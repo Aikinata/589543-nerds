@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
 
 html {
   box-sizing: border-box;
@@ -287,7 +291,7 @@ a .yellow:focus {
 
 .description-block-left {
   width: 680px;
-  padding-top: 75px;
+  padding-top: 70px;
 }
 
 .description-block-left b {
@@ -315,7 +319,7 @@ a .yellow:focus {
 
 .description-block-right {
   width: 360px;
-  padding-top: 40px;
+  padding-top: 70px;
 }
 
 .description-block-right strong {
@@ -533,11 +537,15 @@ filter-option input {
 }
 
 .catalog-filter-menu {
-  list-style: none;
   display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  width: 275px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-filter-menu li {
+  margin-right: 25px;
 }
 
 .catalog-filter b {
@@ -580,16 +588,13 @@ filter-option input {
 .catalog-product {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 60px;
 }
 
 .catalog-product article {
   width: 360px;
-  margin-right: 40px;
-}
-
-.catalog-product article:nth-child(2n) {
-  margin-right: 0;
+  margin-bottom: 30px;
 }
 
 .product-item .top {
