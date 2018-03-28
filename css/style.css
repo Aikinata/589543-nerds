@@ -132,7 +132,21 @@ input[type="radio"].visually-hidden {
 
   margin-left: auto;
   margin-right: 0;
-  padding-left: 40px;
+  padding-left: 45px;
+}
+
+.menu-item-cart::before { 
+  content: "";
+  
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 8px;
+  left: 10px;
+  
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .menu-item a {
@@ -143,7 +157,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: bottom;
-  text-align: center;
+  text-align: middle;
   border: 2px solid transparent;
   color: #000000;
 }
@@ -216,12 +230,11 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item {
-  width: 300px;
   margin-right: 100px;
 }
 
-.services-item-present {
-  margin-right: 60px;
+.services-item img {
+  min-width: 300px;
 }
 
 .services-item h3 {
@@ -315,13 +328,14 @@ a .yellow:focus {
   padding-bottom: 25px;
   text-transform: uppercase;
 }
-.description-block-left .description-services-item {
-  padding-bottom: 23px;
+.description-block-left li {
+  padding-left: 37px;
+  margin-bottom: 25px;
 }
 
 .description-block-right {
   width: 360px;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .description-block-right strong {
@@ -332,12 +346,20 @@ a .yellow:focus {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 41px;
-  padding-bottom: 49px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .percent-ratio {
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+.percent-ratio li {
+  margin-right: 25px;
+}
+.percent-ratio li:last-child {
+  margin-right: 0;
 }
 
 .percent-ratio b {
@@ -355,15 +377,21 @@ a .yellow:focus {
   color: #000000;
 }
 
+.percent-ratio span{
+  display: block;
+  margin-top: 20px;
+}
+
 .links .wrapper {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .links-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .links-list img {
@@ -379,6 +407,7 @@ a .yellow:focus {
 }
 
 .map {
+  margin-bottom: 70px;
   background-image: url("../img/map-group.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -387,23 +416,23 @@ a .yellow:focus {
 .map .wrapper {
   width: 1160px;
   margin: 0 auto;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .map-contacts {
   width: 320px;
-  margin-top: 54px;
-  margin-bottom: 54px;
+  margin-top: 58px;
   padding-left: 50px;
-  padding-top: 54px;
-  padding-bottom: 47px;
+  padding-top: 50px;
+  margin-bottom: 50px;
   background-color: #ffffff;
 }
 
 .map-contacts h3 {
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -417,18 +446,81 @@ a .yellow:focus {
   line-height: 18px;
 }
 
+.map-btn {
+  margin-top: 25px;
+  margin-bottom: 45px;
+  padding: 16px 45px;
+}
+
+
 .main-footer .wrapper {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .footer-social {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 140px;
   width: 260px;
   justify-content: space-between;
+}
+
+.footer-social a {
+  position: relative;
+  display: block;
+  width: 80px;
+}
+
+.vk-icon::before {
+  content: "";
+  
+  position: absolute;
+  
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e1e1e1;
+}
+
+.fb-icon::before {
+  content: "";
+  
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e1e1e1;  
+}
+
+.insta-icon::before {
+  content: "";
+  
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e1e1e1;  
+}
+
+.social-icon:hover vk-icon::before {
+  background-color: #e74246;
 }
 
 .footer-promo b {
@@ -439,7 +531,7 @@ a .yellow:focus {
   color: #000000;
 }
 
-footer-promo span {
+.footer-promo span {
   display: block;
 }
 
@@ -823,7 +915,7 @@ footer-promo span {
 
 .pagination-button a {
   display: inline-block;
-  padding: 13px 80px;
+  padding: 13px 78px;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -834,7 +926,10 @@ footer-promo span {
 }
 
 .modal {
+  display: none;
+  
   position: relative;
+  z-index: 1;
   width: 960px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -866,22 +961,16 @@ footer-promo span {
 
 .modal input {
   width: 360px;
-  margin-right: 40px;
   padding-left: 15px;
   margin-bottom: 30px;
   padding-top: 13px;
   padding-bottom: 15px;
 }
 
-.modal input[type="email"] {
-  margin-right: 0;
-}
-
 .modal p {
   margin: 0;
   padding: 0;
 }
-
 
 .modal input,
 .modal textarea {
@@ -915,13 +1004,11 @@ footer-promo span {
   width: 760px;
   padding-top: 14px;
   padding-bottom: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .modal .modal-btn {
-  display: inline-block;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 15px 84px;
 }
 
 
