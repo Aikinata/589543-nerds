@@ -33,81 +33,71 @@
   <main class="main-catalog">
     <div class="wrapper">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
-      <section class="filter-form">
+      <section class="filters">
 
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend><b>Стоимость:</b></legend>
-            <div class="range-filter">
-              <span class="toggle"></span>
-              <span class="toggle"></span>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+
+        <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
             </div>
-            <div class="flex-label">
-              <label><span>от</span>
-               <input type="text" name="min-price" value="0">
-             </label>
-              <label><span>до</span>
-               <input type="text" name="max-price" value="15 000">
-             </label>
-            </div>
-          </fieldset>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+
+
           <fieldset>
-            <legend><b>Сетка:</b></legend>
+            <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
-                  <span class="radio-indicator"></span>Адаптивная
-                </label>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="adaptive-item">
+                <label for="adaptive-item">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="fixed">
-                  <span class="radio-indicator"></span>Фиксированная</label>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="fixed-item">
+                <label for="fixed-item">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="radio" name="grid" value="fluid">
-                  <span class="radio-indicator"></span>Резиновая</label>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="grid" id="grid-item">
+                <label for="grid-item">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend><b>Особенности:</b></legend>
+            <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="slider" class="visually-hidden" checked>
-                  <span class="checkbox-indicator"></span> Слайдер
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider-item">
+                <label for="filter-slider-item">Слайдер</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="features-block" class="visually-hidden" disabled>
-                  <span class="checkbox-indicator"></span> Блок преимуществ
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="features-item">
+                <label for="features-item">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="news" class="visually-hidden" checked>
-                  <span class="checkbox-indicator"></span> Новости
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news-item">
+                <label for="news-item">Новости</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="gallery" class="visually-hidden">
-                  <span class="checkbox-indicator"></span> Галерея
-                </label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery-item">
+                <label for="gallery-item">Галерея</label>
               </li>
-              <li>
-                <label class="features">
-                  <input type="checkbox" name="cart" class="visually-hidden">
-                  <span class="checkbox-indicator"></span> Корзина
-                </label>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="cart-item">
+                <label for="cart-item">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button filter-button" type="submit">ПОКАЗАТЬ</button>
+          <button type="submit" class="filter-button button">Показать</button>
         </form>
 
       </section>
@@ -126,72 +116,72 @@
           </ul>
         </div>
         <div class="catalog-product">
-          <article class="product-item">
+          <article class="product-item item-sedona">
             <h1 class="visually-hidden">Шаблон сайта Седона</h1>
             <div class="top">
-            <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43">
             </div>
             <img src="img/img-sedona.jpg" width="360" height="575" alt="Макет Седона">
-            <div class="product-description">
-              <a><h3>Sedona</h3></a>
-              <p>Информационный сайт для туристов</p>
+            <div class="product-description description-sedona">
+              <a href="#"><h3>Sedona</h3></a>
+              <p>Информационный сайт<br> для туристов</p>
               <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
-          <article class="product-item">
+          <article class="product-item item-pink">
             <h1 class="visually-hidden">Шаблон приложения Пинк</h1>
             <div class="top">
-            <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43">
             </div>
             <img src="img/img-pink.jpg" width="360" height="575" alt="Макет приложения Пинк">
-            <div class="product-description">
-              <a><h3>Pink App</h3></a>
+            <div class="product-description description-pink">
+              <a href="#"><h3>Pink App</h3></a>
               <p>Продуктовый приложения для iOS и Android</p>
               <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
           <article class="product-item item-barbershop">
-          <h1 class="visually-hidden">Макет сайта Барбершоп</h1>
+            <h1 class="visually-hidden">Макет сайта Барбершоп</h1>
             <div class="top">
-            <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43">
             </div>
             <img src="img/img-barbershop.jpg" width="360" height="575" alt="Макет Барбершоп">
             <div class="product-description description-barbershop">
               <a href="#"><h3>Barbershop</h3></a>
-              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
               <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
-          <article class="product-item">
+          <article class="product-item item-mishka">
             <h1 class="visually-hidden">Макет сайта Мишка</h1>
             <div class="top">
-            <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43">
             </div>
             <img src="img/img-mishka.jpg" width="360" height="575" alt="Макет интернет-магазина Мишка">
-            <div class="product-description">
+            <div class="product-description description-mishka">
               <a href="#"><h3>MISHKA</h3></a>
-              <p>Интернет-магазин вязаных игрушек</p>
+              <p>Интернет-магазин<br> вязаных игрушек</p>
               <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
-          <article class="product-item">
+          <article class="product-item item-aplus">
             <div class="top">
-            <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43">
             </div>
             <img src="img/img-aplus.jpg" width="360" height="575" alt="Макет А Плюс">
-            <div class="product-description">
+            <div class="product-description description-aplus">
               <a href="#"><h3>A Plus</h3></a>
               <p>Лендинг курсов повышения квалификации</p>
               <a class="button product-description-btn" href="#">9 900 руб.</a>
             </div>
           </article>
-          <article class="product-item">
+          <article class="product-item item-kvast">
             <h1 class="visually-hidden">Макет сайта Кваст</h1>
             <div class="top">
-            <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43">
             </div>
             <img src="img/img-kvast.jpg" width="360" height="575" alt="Макет Кваст">
-            <div class="product-description">
+            <div class="product-description description-kvast">
               <a href="#"><h3>КВАСТ</h3></a>
               <p>Промо-сайт производителя крафтового кваса</p>
               <a class="button product-description-btn" href="#">9 900 руб.</a>
@@ -214,7 +204,8 @@
       <h2 class="visually-hidden">Наши контакты и адрес на карте</h2>
       <div class="map-contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p>191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <a class="button" href="#">Напишите нам</a>
       </div>

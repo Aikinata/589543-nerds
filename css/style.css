@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-  margin-right: 202px;
+  margin-right: 200px;
 }
 
 .main-nav-menu {
@@ -128,6 +128,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav-menu .menu-item-cart {
+  position: relative;
+
   margin-left: auto;
   margin-right: 0;
   padding-left: 40px;
@@ -468,42 +470,19 @@ footer-promo span {
   margin-bottom: 60px;
 }
 
-.filter-form {
-  width: 261px;
-  margin-left: 0;
-  margin-right: auto;
+.filters {
+  width: 260px;
 }
 
-.flex-label {
-  display: flex;
-  align-items: center;
-}
-
-.flex-label input[type="text"] {
-  font: inherit;
-
-  width: 80px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  line-height: 22px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: #283136;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: #eeeeee;
-}
-
-.filter-form ul {
+.filter fieldset {
   margin: 0;
   padding: 0;
-  list-style: none;
-  line-height: 20px;
-  color: #283136;
+
+  border: none;
 }
 
-.filter-form b {
+.filter legend {
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -511,17 +490,127 @@ footer-promo span {
   color: #000000;
 }
 
-.filter fieldset {
+.filter-item legend {
+  margin-bottom: 45px;
+}
+
+
+.range-controls {
+  position: relative;
+
+  height: 82px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+  margin-bottom: 60px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 80px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font: inherit;
+  text-align: center;
+
   border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
 }
 
-filter-option input {
-  background-color: #4d4d4d;
-  opacity: 0.4;
+.max-price {
+  text-align: right;
 }
 
-.filter-option label:disabled {
-  opacity: 0.3;
+
+.filters ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-option {
+  margin-bottom: 22px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 16px 90px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
 }
 
 .catalog {
@@ -589,7 +678,7 @@ filter-option input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 
 .catalog-product article {
@@ -635,17 +724,27 @@ filter-option input {
 
 .product-description .product-description-btn {
   margin-bottom: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 60px;
+
+  cursor: pointer;
 }
 
-.item-barbershop {
+.item-sedona,
+.item-pink,
+.item-barbershop,
+.item-mishka,
+.item-aplus,
+.item-kvast {
   position: relative;
 }
 
-.description-barbershop {
+
+.description-sedona,
+.description-pink,
+.description-barbershop,
+.description-mishka,
+.description-aplus,
+.description-kvast {
   position: absolute;
   z-index: 1;
   top: 378px;
@@ -653,11 +752,21 @@ filter-option input {
   display: none;
 }
 
-.item-barbershop:hover .description-barbershop {
+.item-sedona:hover .description-sedona,
+.item-pink:hover .description-pink,
+.item-barbershop:hover .description-barbershop,
+.item-mishka:hover .description-mishka,
+.item-aplus:hover .description-aplus,
+.item-kvast:hover .description-kvast {
   display: block;
 }
 
-.item-barbershop:hover .top {
+.item-sedona:hover .top,
+.item-pink:hover .top,
+.item-barbershop:hover .top,
+.item-mishka:hover .top,
+.item-aplus:hover .top,
+.item-kvast:hover .top {
   opacity: 1;
 }
 
@@ -725,6 +834,7 @@ filter-option input {
 }
 
 .modal {
+  position: relative;
   width: 960px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -805,11 +915,13 @@ filter-option input {
   width: 760px;
   padding-top: 14px;
   padding-bottom: 60px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
-.modal-btn {
-  padding: 16px 85px;
+.modal .modal-btn {
+  display: inline-block;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 
