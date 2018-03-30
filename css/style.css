@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: center;
   width: 800px;
-  margin-top: 17px;
+  margin-top: 20px;
 }
 
 .main-nav-menu li {
@@ -151,7 +151,7 @@ input[type="radio"].visually-hidden {
 
 .menu-item a {
   display: block;
-  padding-bottom: 12px;
+  padding-bottom: 5px;
   font-weight: 500;
   line-height: 30px;
   text-decoration: none;
@@ -249,9 +249,10 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item p {
+  width: 245px;
   margin: 0;
   padding: 0;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
 }
 
 a.red {
@@ -314,7 +315,7 @@ a .yellow:focus {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  padding-bottom: 33px;
+  padding-bottom: 35px;
 }
 
 .description-block-left p {
@@ -407,7 +408,7 @@ a .yellow:focus {
 }
 
 .map {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   background-image: url("../img/map-group.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -416,13 +417,13 @@ a .yellow:focus {
 .map .wrapper {
   width: 1160px;
   margin: 0 auto;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .map-contacts {
   width: 320px;
-  margin-top: 58px;
+  margin-top: 35px;
   padding-left: 50px;
   padding-top: 50px;
   margin-bottom: 50px;
@@ -430,9 +431,7 @@ a .yellow:focus {
 }
 
 .map-contacts h3 {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -447,7 +446,7 @@ a .yellow:focus {
 }
 
 .map-btn {
-  margin-top: 25px;
+  margin-top: 22px;
   margin-bottom: 45px;
   padding: 16px 45px;
 }
@@ -519,12 +518,23 @@ a .yellow:focus {
   background-color: #e1e1e1;  
 }
 
-.social-icon:hover vk-icon::before {
+.footer-social a:hover::before {
   background-color: #e74246;
+}
+
+.footer-social a:focus::before,
+.footer-social a:active::before {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.footer-promo {
+  margin-top: 9px;
 }
 
 .footer-promo b {
   display: block;
+  margin-bottom: 10px;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -536,7 +546,7 @@ a .yellow:focus {
 }
 
 .catalog-page .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .main-header h1 {
@@ -548,7 +558,7 @@ a .yellow:focus {
   color: #000000;
   text-align: center;
   padding-top: 73px;
-  padding-bottom: 111px;
+  padding-bottom: 110px;
 }
 .catalog-page .main-header {
   margin-bottom: 55px;
@@ -574,7 +584,7 @@ a .yellow:focus {
 }
 
 .filter legend {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -583,16 +593,15 @@ a .yellow:focus {
 }
 
 .filter-item legend {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
-
 
 .range-controls {
   position: relative;
 
   height: 82px;
   margin-bottom: 15px;
-  padding-top: 39px;
+  padding-top: 43px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -608,7 +617,7 @@ a .yellow:focus {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 70%x;
   height: 2px;
 
   background: #00ca74;
@@ -616,11 +625,11 @@ a .yellow:focus {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 35px;
   left: 0;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
 
   border: 8px solid #ffffff;
@@ -631,11 +640,11 @@ a .yellow:focus {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -653,7 +662,7 @@ a .yellow:focus {
 
 .price-controls input {
   width: 80px;
-  padding: 8px 10px;
+  padding: 6px 10px;
   margin-left: 10px;
 
   font: inherit;
@@ -679,22 +688,97 @@ a .yellow:focus {
 }
 
 .filter-option {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   padding-left: 35px;
+}
+
+.grid-group .filter-option:last-child {
+  margin-bottom: 44px;
 }
 
 .filter-option label {
   position: relative;
 
   display: block;
+  color: #283136;
 
   cursor: pointer;
   user-select: none;
 }
 
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -34px;
+  
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  
+  position: absolute;
+  top: -3px;
+  left: -34px;
+  
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+    
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -5;
+  left: -34px;
+  
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  
+  position: absolute;
+  top: 0;
+  left: -32px;
+  
+  width: 23px;
+  height: 23px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
 .filter-button {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 28px;
   padding: 16px 90px;
   font-weight: 500;
   text-align: center;
@@ -762,8 +846,44 @@ a .yellow:focus {
 .filter-triangles {
   margin: 0;
   padding: 0;
+  margin-right: 0;
+  margin-left: auto;
   list-style: none;
   display: flex;
+}
+
+.filter-triangles a {
+  position: relative;
+  display: block;
+  width: 30px;
+}
+
+.filter-triangle-down::before {
+  content: "";
+  
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 20px;
+  
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter-triangle-up::before {
+  content: "";
+  
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 20px;
+  
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;  
 }
 
 .catalog-product {
@@ -780,7 +900,7 @@ a .yellow:focus {
 
 .product-item .top {
   opacity: 0.12;
-  margin-bottom: -10px;
+  margin-bottom: -9px;
 }
 
 .product-description {
@@ -788,7 +908,6 @@ a .yellow:focus {
   text-align: center;
 
   background-color: #eeeeee;
-  border: 1px solid transparent;
 }
 
 .product-description h3 {
@@ -807,15 +926,16 @@ a .yellow:focus {
 .product-description p {
   margin: 0;
   padding: 0;
+  width: 225px;
   margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  
 
   color: #666666;
 }
 
 .product-description .product-description-btn {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding: 15px 60px;
 
   cursor: pointer;
@@ -838,8 +958,7 @@ a .yellow:focus {
 .description-aplus,
 .description-kvast {
   position: absolute;
-  z-index: 1;
-  top: 378px;
+  top: 385px;
 
   display: none;
 }
@@ -925,11 +1044,9 @@ a .yellow:focus {
   background-color: #eeeeee;
 }
 
-.modal {
-  display: none;
-  
+.modal {  
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 960px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -945,7 +1062,7 @@ a .yellow:focus {
   margin: 0;
   padding: 0;
   padding-top: 70px;
-  padding-bottom: 35px;
+  margin-bottom: 40px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -1004,11 +1121,39 @@ a .yellow:focus {
   width: 760px;
   padding-top: 14px;
   padding-bottom: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
-.modal .modal-btn {
+button[type="submit"] {
+  display: inline-block;
   padding: 15px 84px;
 }
+
+.modal-close {  
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 30px;
+  width: 21px;
+  height: 21px;
+  
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  
+  cursor: pointer;
+}
+
+.modal-close:hover{
+  opacity: 1;
+}
+
+.modal-close:focus,
+.modal-close:active {
+  opacity: 0.1;
+}
+
+
 
 

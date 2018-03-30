@@ -42,7 +42,7 @@
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
-              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+              <div class="bar" style="width:65%"></div>
             </div>
             <div class="toggle toggle-min"></div>
             <div class="toggle toggle-max"></div>
@@ -55,11 +55,11 @@
       </fieldset>
 
 
-          <fieldset>
+          <fieldset class="grid-group">
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="adaptive-item">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="adaptive-item" checked>
                 <label for="adaptive-item">Адаптивная</label>
               </li>
               <li class="filter-option">
@@ -76,15 +76,15 @@
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider-item">
-                <label for="filter-slider-item">Слайдер</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider-item" checked>
+                <label for="slider-item">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="features-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="features-item" disabled>
                 <label for="features-item">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news-item" checked>
                 <label for="news-item">Новости</label>
               </li>
               <li class="filter-option">
@@ -111,8 +111,8 @@
             <li class="filter-menu"><a href="#">По названию</a></li>
           </ul>
           <ul class="filter-triangles">
-            <li class="filter-triangle filter-triangle-down"><a href="#"><span class="visually-hidden">по убыванию</span></a></li>
-            <li class="filter-triangle filter-triangle-up"><a href="#"><span class="visually-hidden">по возрастанию</span></a></li>
+            <li class="filter-triangle"><a class="filter-triangle-down" href="#"><span class="visually-hidden">по убыванию</span></a></li>
+            <li class="filter-triangle"><a class="filter-triangle-up" href="#"><span class="visually-hidden">по возрастанию</span></a></li>
           </ul>
         </div>
         <div class="catalog-product">
@@ -216,8 +216,8 @@
     <div class="wrapper">
       <ul class="footer-social">
         <li> <a class="social-icon vk-icon" href="#"><span class="visually-hidden">ВКонтакте</span></a> </li>
-        <li> <a class="social-icon fb-icon" href="#">Фейсбук</a> </li>
-        <li> <a class="social-icon insta-icon" href="#">Инстаграм</a> </li>
+        <li> <a class="social-icon fb-icon" href="#>"><span class="visually-hidden">Фейсбук</span></a> </li>
+        <li> <a class="social-icon insta-icon" href="#"><span class="visually-hidden">Инстаграм</span></a> </li>
       </ul>
       <p class="footer-promo">
         <b>Давайте дружить, это выгодно!</b>
@@ -246,7 +246,7 @@
         </p>
         <button class="button modal-btn" type="submit">ОТПРАВИТЬ</button>
       </form>
-      <span class="modal-close">x</span>
+      <span class="modal-close"><span class="visually-hidden">закрыть модальное окно</span></span>
     </div>
   </section>
 
