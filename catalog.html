@@ -6,7 +6,7 @@
   <title>Дизайн-студия NERD'S</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body class="catalog-page">
@@ -32,27 +32,31 @@
 
   <main class="main-catalog">
     <div class="wrapper">
-      <h2 class="visually-hidden">Каталог шаблонов</h2>
       <section class="filters">
+        <h2 class="visually-hidden">Каталог шаблонов</h2>
 
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="filter-item">
-        <legend>Стоимость:</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="width:65%"></div>
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width:65%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input name="min-price" type="text" value="0">
+                </label>
+                <label class="max-price">до
+                  <input name="max-price" type="text" value="15000">
+                </label>
+              </div>
             </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-          </div>
-          <div class="price-controls">
-            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-          </div>
-        </div>
-      </fieldset>
+          </fieldset>
 
 
           <fieldset class="grid-group">
@@ -80,7 +84,7 @@
                 <label for="slider-item">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="features-item" disabled>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="features-item">
                 <label for="features-item">Блок преимуществ</label>
               </li>
               <li class="filter-option">
@@ -103,15 +107,16 @@
       </section>
 
       <section class="catalog">
+        <h2 class="visually-hidden">Форма рассчета стоимости</h2>
         <div class="catalog-filter">
           <b>Сортировать:</b>
           <ul class="catalog-filter-menu">
-            <li class="filter-menu-item filter-menu-active">По цене</li>
+            <li class="filter-menu-item filter-menu-active"><a>По цене</a></li>
             <li class="filter-menu"><a href="#">По типу</a></li>
             <li class="filter-menu"><a href="#">По названию</a></li>
           </ul>
           <ul class="filter-triangles">
-            <li class="filter-triangle"><a class="filter-triangle-down" href="#"><span class="visually-hidden">по убыванию</span></a></li>
+            <li class="filter-triangle"><a class="filter-triangle-down filter-tiangle-active"><span class="visually-hidden">по убыванию</span></a></li>
             <li class="filter-triangle"><a class="filter-triangle-up" href="#"><span class="visually-hidden">по возрастанию</span></a></li>
           </ul>
         </div>
@@ -119,7 +124,7 @@
           <article class="product-item item-sedona">
             <h1 class="visually-hidden">Шаблон сайта Седона</h1>
             <div class="top">
-              <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43" alt="Верхняя панель шаблона макета Седона">
             </div>
             <img src="img/img-sedona.jpg" width="360" height="575" alt="Макет Седона">
             <div class="product-description description-sedona">
@@ -131,7 +136,7 @@
           <article class="product-item item-pink">
             <h1 class="visually-hidden">Шаблон приложения Пинк</h1>
             <div class="top">
-              <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43" alt="Верхняя панель шаблона макета Пинк">
             </div>
             <img src="img/img-pink.jpg" width="360" height="575" alt="Макет приложения Пинк">
             <div class="product-description description-pink">
@@ -143,7 +148,7 @@
           <article class="product-item item-barbershop">
             <h1 class="visually-hidden">Макет сайта Барбершоп</h1>
             <div class="top">
-              <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43" alt="Верхняя панель шаблона макета Барбершоп">
             </div>
             <img src="img/img-barbershop.jpg" width="360" height="575" alt="Макет Барбершоп">
             <div class="product-description description-barbershop">
@@ -155,7 +160,7 @@
           <article class="product-item item-mishka">
             <h1 class="visually-hidden">Макет сайта Мишка</h1>
             <div class="top">
-              <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43" alt="Верхняя панель шаблона макета Мишка">
             </div>
             <img src="img/img-mishka.jpg" width="360" height="575" alt="Макет интернет-магазина Мишка">
             <div class="product-description description-mishka">
@@ -166,7 +171,7 @@
           </article>
           <article class="product-item item-aplus">
             <div class="top">
-              <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43" alt="Верхняя панель шаблона макета А Плюс">
             </div>
             <img src="img/img-aplus.jpg" width="360" height="575" alt="Макет А Плюс">
             <div class="product-description description-aplus">
@@ -178,7 +183,7 @@
           <article class="product-item item-kvast">
             <h1 class="visually-hidden">Макет сайта Кваст</h1>
             <div class="top">
-              <img src="img/browser.svg" width="360" height="43">
+              <img src="img/browser.svg" width="360" height="43" alt="Верхняя панель шаблона макета Кваст">
             </div>
             <img src="img/img-kvast.jpg" width="360" height="575" alt="Макет Кваст">
             <div class="product-description description-kvast">
@@ -204,8 +209,7 @@
       <h2 class="visually-hidden">Наши контакты и адрес на карте</h2>
       <div class="map-contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8</p>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <a class="button map-btn" href="#">Напишите нам</a>
       </div>
@@ -216,7 +220,7 @@
     <div class="wrapper">
       <ul class="footer-social">
         <li> <a class="social-icon vk-icon" href="#"><span class="visually-hidden">ВКонтакте</span></a> </li>
-        <li> <a class="social-icon fb-icon" href="#>"><span class="visually-hidden">Фейсбук</span></a> </li>
+        <li> <a class="social-icon fb-icon" href="#"><span class="visually-hidden">Фейсбук</span></a> </li>
         <li> <a class="social-icon insta-icon" href="#"><span class="visually-hidden">Инстаграм</span></a> </li>
       </ul>
       <p class="footer-promo">
