@@ -97,8 +97,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+  min-width: 1160px;
   background-color: #eee;
-  margin-bottom: 81px;
+  margin-bottom: 80px;
 }
 
 .main-header .wrapper {
@@ -276,7 +277,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 80px;
+  padding-bottom: 83px;
 }
 
 .services-item {
@@ -350,7 +351,7 @@ a .yellow:focus {
 .description .wrapper {
   width: 1160px;
   margin-bottom: 72px;
-  padding-bottom: 49px;
+  padding-bottom: 54px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,7 +380,7 @@ a .yellow:focus {
 .description-block-left p {
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
 }
 
 .description-block-left strong {
@@ -545,8 +546,8 @@ a .yellow:focus {
   background-image: url("../img/map-group.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 59px;
-  padding-bottom: 59px;
+  padding-top: 58px;
+  padding-bottom: 58px;
 }
 
 .map .wrapper {
@@ -590,12 +591,13 @@ a .yellow:focus {
 }
 
 .main-footer {
-  padding-top: 54px;
+  padding-top: 57px;
 }
 
 .main-footer .wrapper {
   width: 1160px;
   margin: 0 auto;
+  padding-bottom: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,7 +717,7 @@ a .yellow:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .filters {
